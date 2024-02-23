@@ -54,7 +54,7 @@ static int __add_line(arr_str *lines, char *line,
 
     // If the brands are the same, combine models in single
     //  char * variable, update lines and return
-    if (str_n_cmp(prev_line, line, brand_end - line) == 0) {
+    if (str_n_cmp(prev_line, line, ((size_t) (brand_end - line))) == 0) {
       char *new_models;
       char *temp;
 

@@ -3,7 +3,7 @@ OBJS = my_string.o tokenizer.o process_file.o BST.o main.o
 
 # -Wextra
 CFLAGS = -O3 -g3 -Wall -Werror=format-security -Werror=implicit-function-declaration \
-         -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wwrite-strings \
+         -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wwrite-strings -Wconversion
 
 all: main
 
